@@ -28,7 +28,7 @@ public class CalculadoraRestService {
 	public Response divisao(@PathParam("param1") int num1, @PathParam("param2") int num2) {
 		if(num2 == 0)
 			return Response.status(200).entity("nao pode dividir por zero").build();
-		String result = "A divisao : " + (num1/num2);
+		String result = "A divisao : " + ((float)num1/num2);
 		return Response.status(200).entity(result).build();
 	}
 	
