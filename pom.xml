@@ -55,6 +55,12 @@
 			<artifactId>tomcat-jsp-api</artifactId>
 			<version>${tomcat.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jackson-provider</artifactId>
+			<version>3.0.19.Final</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>PrimeiroProjeto</finalName>
