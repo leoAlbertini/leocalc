@@ -1,7 +1,18 @@
 package br.edu.fcv.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
 public class Produto {
+	
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	@Column 
 	private String nome;
+	@Column
 	private int quantidade;
 
 	public String getNome() {
@@ -19,5 +30,15 @@ public class Produto {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	
 
 }
